@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="container containerSize">
+        <div class="header">
+            <div class="menuAlign">
+                <h1>Tarefas a fazer</h1>
+                <h5>Adicione e complete tarefas para organizar melhor sua semana. :)</h5>
+            </div>
+        </div>
+
+        <div class="searchSortBox">
+            <div class="search searchStyle">
+                <input type="text" placeholder="Busque tarefas">
+                <button class="searchBtn">Buscar</button>
+                <select class="filter" id="options">
+                    <option value="Prazo">Prazo</option>
+                    <option value="2">Mais recente</option>
+                    <option value="3">Dificuldade</option>
+                </select>
+                <label class="filterpos" for="options">Organizar por:</label>
+
+            </div>
+        </div>
+
+        <main class="cards containerCards"> 
+            <section class="card card-wrapper">
+                <div class="icon card-details">
+                    <img src="assets/bg.png" alt="bg">
+                </div>
+                <h3>Nome da tarefa</h3>
+                
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam pariatur beatae!</span>
+                <h4>Prazo: 00/00 </h3>
+                
+                <h5>Data de inclusão há 2 Semanas</h5>
+
+                <div class="reveal-details">
+                    <div class="btCenter">
+                        <button class="bt1Color">Selecionar</button>
+                    </div>
+                    <div class="btCenter2">
+                        <button class="bt2Color">Alterar prazo</button>
+                    </div>
+                </div>
+            </section>
+            
+        </main>   
+
+        <!-- <footer class="site-footer">
+            <div id="footer1"><p>Copyright  2021 Domain Name - All Rights Reserved </p></div>
+        </footer> -->
+    </div>
+</body>
+</html>

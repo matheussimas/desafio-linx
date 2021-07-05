@@ -1,0 +1,284 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #f6f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #434343;
+}
+
+.menuAlign {
+  display: table;
+  margin: 0 auto;
+}
+
+.containerSize {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.header {
+  background-color: #422754;
+  width: 100%;
+  height: 151px;
+  left: 0px;
+  top: 0px;
+}
+
+
+.header h1 {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  font-size: 39px;
+  font-weight: 700;
+}
+
+.header h5 {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0px 0px 40px 0px;
+}
+
+.searchSortBox {
+  position: absolute;
+  width: 100%;
+  height: 85px;
+  top: 197px;
+}
+
+.searchStyle {
+  border-radius: 8px;
+  background-color: #ffaf3e;
+  margin: auto;
+  width: 72%;
+  padding: 10px;
+}
+.search input[type="text"] {
+  width: 25%;
+  margin: 4px 4px;
+  text-align: center;
+  display: inline-block;
+  padding: 6px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10%;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.searchBtn {
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  margin: 4px -25px;
+  text-align: center;
+  font-size: 17px;
+  background-color: #422754;
+  color: white;
+}
+
+.filter {
+  padding: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  border-radius: 8px;
+  margin: 4px 100px;
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 3px;
+  text-align: center;
+  font-size: 17px;
+  background-color: white;
+  color: #434343;
+}
+
+.filterpos {
+  padding: 6px;
+  font-size: 17px;
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+main.cards {
+  display: flex;
+  grid-auto-rows: auto;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main.cards section.card {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    width: 253px;
+}
+
+.containerCards {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  top: 150px;
+}
+
+.card {
+  flex: 0 1 calc(30% - 1em);
+}
+
+main.cards section.card .icon {
+  position: absolute;
+  margin: 20px;
+  height: 160px;
+}
+
+main.cards section.card img {
+  width: 100%;
+  height: 170px;
+}
+
+main.cards section.card h3 {
+  position: absolute;
+  font-size: 100%;
+  margin: 200px 20px 20px 20px;
+}
+
+main.cards section.card h4{
+  position: absolute;
+  font-size: 100%;
+  margin: 290px 20px 20px 20px;
+}
+
+main.cards section.card h5{
+  position: absolute;
+  font-size: 12px;
+  margin: 320px 20px 20px 20px;
+}
+
+main.cards section.card span {
+  position: absolute;
+  font-weight: 300;
+  font-size: 80%;
+  margin: 230px 20px 20px 20px;
+}
+
+main.cards section.card span b {
+    font-weight: 700;
+    font-size: 130%;
+    color: red;
+    margin-bottom: 16px;
+  }
+
+main.cards section.card button {
+  width: 100%;
+  height: 35px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.btCenter{
+  display: flex;
+  align-items: center;
+  margin: 360px 20px 10px 20px;
+}
+.bt1Color{
+  background-color: #793da1;
+  color: white;
+}
+.btCenter2{
+  display: flex;
+  align-items: center;
+  margin: 0px 20px 20px 20px;
+}
+.bt2Color{
+  background-color: #ce1111;
+  color: white;
+}
+
+main.cards section.card {
+  box-shadow: 20px 20px 25px -30px;
+  border: 1px solid;
+  border-color: #793da1;
+}
+
+/*---------------------------------------------------------*/
+.page-wrapper {
+  padding-top: 5%;
+  display: flex;
+  -webkit-display: flex;
+  justify-content: space-around;
+}
+
+.card-wrapper {
+  overflow: hidden;
+  max-height: 360px;
+  transition: max-height 500ms ease-in-out;  
+  
+}
+
+.card-wrapper:hover{
+  box-shadow: 0 0 8px #d3d3d3;    
+  cursor: pointer;
+  max-height: 460px;
+}
+
+.card-details,
+.reveal-details {
+  font-weight: 300;
+}
+
+.card-height-animate {
+  height: 460px; 
+}
+
+/*----------------------------------------------------------*/
+
+
+/* .site-footer {
+  position:absolute;
+  width:100%;
+  bottom:0;
+  left:0;
+  background: #422754;
+  color: white;
+  padding: 20px;
+  text-align: center;
+} */
+
+/*- Celular -*/
+@media screen and (max-width: 720px) {
+  main.cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+}
