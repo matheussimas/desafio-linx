@@ -16,18 +16,20 @@
                 <h5>Adicione e complete tarefas para organizar melhor sua semana. :)</h5>            
         </div>
 
-        <div class="searchSortBox">
+        <div class="box searchSortBox">
             <div class="search searchStyle">
-                <input type="text" placeholder="Busque tarefas">
+                <input id="searchValue" type="text" placeholder="Busque tarefas">
                 <button class="searchBtn">Buscar</button>
-                <select class="filter" id="options">
+            </div>
+                <label class="filterSide" for="filterOption">Organizar por:</label>
+                <select class="filter" id="filterOption">
                     <option value="Prazo">Prazo</option>
                     <option value="2">Mais recente</option>
                     <option value="3">Dificuldade</option>
                 </select>
-                <label class="filterpos" for="options">Organizar por:</label>
-
-            </div>
+                
+            
+            
         </div>
 
         <main class="cards containerCards"> 
@@ -51,8 +53,8 @@
                     </div>
                 </div>
             </section>
-            
-        </main>   
+        </main>
+    
 
         <!-- <footer class="site-footer">
             <div id="footer1"><p>Copyright  2021 Domain Name - All Rights Reserved </p></div>

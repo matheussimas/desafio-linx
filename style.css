@@ -12,7 +12,7 @@ body {
   background: #f6f9ff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   color: #434343;
 }
 
@@ -50,23 +50,24 @@ body {
 
 .searchSortBox {
   position: absolute;
-  
-  width: 100%;
-  top: 197px;
+  border-radius: 8px;
+  background-color: #ffaf3e;
+  margin-left: 14%;
+  margin-right: 14%;
+  padding: 12px 5px;
+  width: 72%;
+  height: 80px;
+  top: 237px;
+  display: flex;
+  align-items: center;
 }
 
 .searchStyle {
-  align-items: center;
-  border-radius: 8px;
-  background-color: #ffaf3e;
-  margin: auto;
-  width: 72%;
-  padding: 10px;
-  height: 80px;
+  width: 60%;
 }
 
 .search input[type="text"] {
-  width: 25%;
+  width: 250px;
   margin: 4px 4px;
   text-align: left;
   display: inline-block;
@@ -75,6 +76,7 @@ body {
   margin-left: 10%;
   font-size: 14px;
   border-radius: 8px;
+  color: #434343;
 }
 
 .searchBtn {
@@ -90,28 +92,26 @@ body {
 }
 
 .filter {
+  width: max-content;
   padding: 6px;
-  padding-left: 40px;
-  padding-right: 40px;
   border: none;
   border-radius: 8px;
-  margin-right: 10%;
-  float: right;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 3px;
+  margin-right: 5%;
   text-align: center;
-  font-size: 17px;
+  font-size: 14px;
   background-color: white;
   color: #434343;
 }
 
-.filterpos {
+.filterSide {
+  
   padding: 6px;
-  font-size: 17px;
-  float: right;
+  font-size: 14px;
+  float: left;
   margin-top: 15px;
   margin-bottom: 15px;
+  margin-left: auto;
+  margin: right 8px;
   color: white;
 }
 
@@ -141,9 +141,9 @@ main.cards section.card {
   top: 150px;
 }
 
-.card {
+/* .card {
   flex: 0 1 calc(30% - 1em);
-}
+} */
 
 main.cards section.card .icon {
   position: absolute;
