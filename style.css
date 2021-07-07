@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +11,21 @@ body {
   background: #f6f9ff;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   color: #434343;
 }
-
 
 .containerSize {
   width: 100vw;
   height: 100vh;
 }
 
-
 .header {
   background-color: #422754;
   width: 100%;
   height: 151px;
+  position: relative;
   top: 0px;
 }
-
 
 .header h1 {
   color: #f2f2f2;
@@ -49,7 +45,7 @@ body {
 }
 
 .searchSortBox {
-  position: absolute;
+  position: relative;
   border-radius: 8px;
   background-color: #ffaf3e;
   margin-left: 14%;
@@ -57,7 +53,7 @@ body {
   padding: 12px 5px;
   width: 72%;
   height: 80px;
-  top: 237px;
+  top: 100px;
   display: flex;
   align-items: center;
 }
@@ -104,7 +100,6 @@ body {
 }
 
 .filterSide {
-  
   padding: 6px;
   font-size: 14px;
   float: left;
@@ -115,35 +110,30 @@ body {
   color: white;
 }
 
+
+
 main.cards {
   display: flex;
-  grid-auto-rows: auto;
+  
   padding: 30px;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 100px;
   justify-content: center;
 }
 
 main.cards section.card {
-    position: absolute;
-    display: block;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    border-radius: 8px;
-    width: 253px;
+  position: absolute;
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  width: 253px;
 }
 
-.containerCards {
-  margin: auto;
-  width: 100%;
-  position: relative;
-  top: 150px;
-}
-
-/* .card {
-  flex: 0 1 calc(30% - 1em);
-} */
 
 main.cards section.card .icon {
   position: absolute;
@@ -162,13 +152,13 @@ main.cards section.card h3 {
   margin: 200px 20px 20px 20px;
 }
 
-main.cards section.card h4{
+main.cards section.card h4 {
   position: absolute;
   font-size: 100%;
   margin: 290px 20px 20px 20px;
 }
 
-main.cards section.card h5{
+main.cards section.card h5 {
   position: absolute;
   font-size: 12px;
   margin: 320px 20px 20px 20px;
@@ -182,11 +172,11 @@ main.cards section.card span {
 }
 
 main.cards section.card span b {
-    font-weight: 700;
-    font-size: 130%;
-    color: red;
-    margin-bottom: 16px;
-  }
+  font-weight: 700;
+  font-size: 130%;
+  color: red;
+  margin-bottom: 16px;
+}
 
 main.cards section.card button {
   width: 100%;
@@ -199,21 +189,21 @@ main.cards section.card button {
   font-weight: 500;
 }
 
-.btCenter{
+.btCenter {
   display: flex;
   align-items: center;
   margin: 360px 20px 10px 20px;
 }
-.bt1Color{
+.bt1Color {
   background-color: #793da1;
   color: white;
 }
-.btCenter2{
+.btCenter2 {
   display: flex;
   align-items: center;
   margin: 0px 20px 20px 20px;
 }
-.bt2Color{
+.bt2Color {
   background-color: #ce1111;
   color: white;
 }
@@ -235,12 +225,11 @@ main.cards section.card {
 .card-wrapper {
   overflow: hidden;
   max-height: 360px;
-  transition: max-height 500ms ease-in-out;  
-  
+  transition: max-height 500ms ease-in-out;
 }
 
-.card-wrapper:hover{
-  box-shadow: 0 0 8px #d3d3d3;    
+.card-wrapper:hover {
+  box-shadow: 0 0 8px #d3d3d3;
   cursor: pointer;
   max-height: 460px;
 }
@@ -251,11 +240,10 @@ main.cards section.card {
 }
 
 .card-height-animate {
-  height: 460px; 
+  height: 460px;
 }
 
 /*----------------------------------------------------------*/
-
 
 /* .site-footer {
   position:absolute;
@@ -268,7 +256,8 @@ main.cards section.card {
   text-align: center;
 } */
 
-/*- Celular -*/
+/*- MOBILE -*/
+
 @media screen and (max-width: 720px) {
   main.cards {
     flex-direction: column;
